@@ -42,14 +42,12 @@
       }
     }
     function game() {
+      for (let i = 0; i < 5; i++) {
       escolhaDoUser();
       let escolhaComp = computerPlay();
       console.log("Escolha do Computador: " + escolhaComp);
       playRound(escolha, escolhaComp);
-      escolhaDoUser();
-      escolhaComp = computerPlay();
-      console.log("Escolha do Computador: " + escolhaComp);
-      playRound(escolha, escolhaComp);
+}
       console.log("Pontos do Usario ", pontosUsario);
       console.log("Pontos do Computador ", pontosComp);
     }
