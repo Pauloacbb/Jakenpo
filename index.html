@@ -19,10 +19,11 @@
     function escolhaDoUser() {
       let escolhaUser = prompt("Pedra, Papel, Tesoura", "Escolha um");
       console.log("Escolha do Usuario: " + escolhaUser);
-      escolha = escolhaUser.toLocaleLowerCase()
+      let escolha = escolhaUser.toLocaleLowerCase()
       if (escolha !== "pedra" && escolha !== "papel" && escolha !== "tesoura") {
-        escolha = prompt('Escolha de Novo');
+        alert("Erro");
       }
+      return escolha;
     }
     function computerPlay() {
       let aleatorio = ["pedra", "papel", "tesoura"];
@@ -43,7 +44,7 @@
     }
     function game() {
       for (let i = 0; i < 5; i++) {
-      escolhaDoUser();
+      let escolha = escolhaDoUser();
       let escolhaComp = computerPlay();
       console.log("Escolha do Computador: " + escolhaComp);
       playRound(escolha, escolhaComp);
