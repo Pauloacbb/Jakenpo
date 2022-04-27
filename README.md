@@ -1,3 +1,3 @@
-Projeto de JavaScript 
-Utilizando o Console
+Projeto de JavaScript utilizando DOM
+com UI basica
 
